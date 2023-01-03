@@ -4,58 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     Navbar,
     NavbarBrand,
-    Table,
     NavbarText,
-} from 'reactstrap'; import './index.css';
-
-class Movie extends React.Component {
-    render() {
-        return (
-            <div className='title'>
-                <Table>
-                    <tbody>
-                        <tr>
-                            {this.props.image}
-                        </tr>
-                        <tr>
-                            {this.props.title}
-                        </tr>
-                        <tr>
-                            {this.props.director}
-                        </tr>
-                    </tbody>
-                </Table>
-
-            </div>
-        );
-    }
-}
-
-class MovieList extends React.Component {
-    render() {
-        return (
-            <div className="movie-list">
-                <Table striped hover bordered>
-                    <tbody>
-                        <tr>
-                            <td><Movie image="href.jpg" title="Movie 1" director="JJ Abrams" /></td>
-                            <td><Movie image="href.jpg" title="Movie 2" director="JJ Abrams" /></td>
-                            <td><Movie image="href.jpg" title="Movie 3" director="JJ Abrams" /></td>
-                        </tr>
-                        <tr>
-                            <td><Movie image="href.jpg" title="Movie 4" director="JJ Abrams" /></td>
-                            <td><Movie image="href.jpg" title="Movie 5" director="JJ Abrams" /></td>
-                            <td><Movie image="href.jpg" title="Movie 6" director="JJ Abrams" /></td>
-                        </tr>
-                    </tbody>
-                </Table>
-            </div>
-        );
-    }
-}
+} from 'reactstrap';
+import './index.css';
+import MovieList from './components/MovieList';
 
 class Home extends React.Component {
-
     render() {
         return (
             <div>
