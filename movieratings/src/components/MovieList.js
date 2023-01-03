@@ -1,4 +1,6 @@
 import { Table } from 'reactstrap';
+import StarRating from './StarRating.js';
+
 function Movie(args) {
     return (
         <div>
@@ -8,10 +10,10 @@ function Movie(args) {
                         <td>{args.image}</td>
                     </tr>
                     <tr>
-                        <td>{args.title}</td>
+                        <td>{args.title} by {args.director}</td>
                     </tr>
                     <tr>
-                        <td>{args.director}</td>
+                        <td><StarRating /></td>
                     </tr>
                 </tbody>
             </Table>
