@@ -4,21 +4,16 @@ import ReactDOM from 'react-dom/client';
 
 // Reactstrap imports
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-    Navbar,
-    NavbarBrand,
-    NavbarText,
-} from 'reactstrap';
 import './index.css';
 
 // App imports
 import MovieList from './components/MovieList';
+import HeaderBar from './components/HeaderBar';
 
 // Firebase imports
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionDate } from 'react-firebase-hooks/firestore';
 
 
@@ -33,17 +28,12 @@ firebase.initializeApp({
 })
 
 const auth = firebase.auth();
-const firestore = firebase.firestore();
 
 export default function Home() {
-    const user = useAuthState(auth);
 
     return (
         <div>
-            <Navbar color="dark" dark>
-                <NavbarBrand href="/" color="dark">Movie Ratings</NavbarBrand>
-                <NavbarText>Account</NavbarText>
-            </Navbar>
+            <HeaderBar />
             <MovieList />
         </div>
     );
