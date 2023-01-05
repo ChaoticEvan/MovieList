@@ -23,7 +23,7 @@ export default function HeaderBar() {
     const [user] = useAuthState(auth);
 
     return (
-        <Navbar color="dark" dark>
+        <Navbar color="dark" className="navbar-rounded" dark>
             <NavbarBrand href="/" color="dark">Movie Ratings</NavbarBrand>
             <Nav className="me-auto" navbar>
                 <NavItem>

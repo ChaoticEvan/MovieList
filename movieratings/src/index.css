@@ -14,9 +14,33 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+.background {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(135, 255, 171, 1) 75%
+  );
+}
 .on {
   color: #000;
 }
 .off {
   color: #ccc;
+}
+
+.navbar-rounded {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 1%;
+}
+
+.table-rounded {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 1px solid black;
 }

@@ -23,8 +23,8 @@ function Movie(args) {
 
 export default function MovieList() {
     return (
-        <div className="movie-list">
-            <Table striped hover bordered>
+        <div>
+            <Table striped hover bordered className="movie-list table-rounded background">
                 <tbody>
                     <tr>
                         <td><Movie image="image" title="Movie title 1" director="director" /></td>
