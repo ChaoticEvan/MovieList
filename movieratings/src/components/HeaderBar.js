@@ -27,17 +27,13 @@ export default function HeaderBar() {
             <NavbarBrand href="/" color="dark">Movie Ratings</NavbarBrand>
             <Nav className="me-auto" navbar>
                 <NavItem>
-
                     <Form>
                         <Row className="row-cols-lg-auto g-3 align-items-center">
                             <Col>
-                                <Label className="visually-hidden" for="exampleEmail" >
-                                    Email
-                                </Label>
-                                <Input id="zipCode" name="zipCode" placeholder="Enter ZIP" type="email" />
+                                <Input id="zipCode" name="zipCode" placeholder="Enter ZIP" />
                             </Col>
                             <Col>
-                                <Button>
+                                <Button className='search-button'>
                                     Search
                                 </Button>
                             </Col>

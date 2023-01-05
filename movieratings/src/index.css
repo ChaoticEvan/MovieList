@@ -3,6 +3,9 @@ body {
   margin: 20px;
 }
 
+/*
+* CSS rules for star rating system
+*/
 ol,
 ul {
   padding-left: 30px;
@@ -15,19 +18,24 @@ button {
   cursor: pointer;
 }
 
+/*
+* My custom CSS Rules
+*/
+:root {
+  --primary-background: #1fab89;
+  --secondary-background: #62d2a2;
+  --primary-highlight: #9df3c4;
+  --secondary-highlight: #d7fbe8;
+}
+
 .background {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    148deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(135, 255, 171, 1) 75%
-  );
+  background: var(--primary-background);
 }
 .on {
-  color: #000;
+  color: var(--primary-highlight);
 }
 .off {
-  color: #ccc;
+  color: var(--secondary-highlight);
 }
 
 .navbar-rounded {
@@ -36,11 +44,20 @@ button {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: 1%;
+  background-color: var(--primary-background) !important;
 }
 
 .table-rounded {
   border-spacing: 0;
   border-collapse: separate;
   border-radius: 15px;
-  border: 1px solid black;
+  border: 1px solid var(--primary-background);
+  color: #fff !important;
+}
+
+.search-button,
+.sign-out-button,
+.sign-in-button {
+  background-color: var(--secondary-background);
+  border-color: var(--primary-background);
 }

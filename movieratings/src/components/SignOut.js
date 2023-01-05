@@ -9,7 +9,7 @@ export default function SignOut() {
     const [user] = useAuthState(auth);
 
     return auth.currentUser && (
-        <Button className="sign-out" onClick={() => auth.signOut()}>Sign Out of {user.displayName}</Button >
+        <Button className="sign-out-button" onClick={() => auth.signOut()}>Sign Out of {user.displayName}</Button >
     )
 
 }
