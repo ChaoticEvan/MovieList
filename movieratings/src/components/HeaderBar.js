@@ -1,7 +1,15 @@
 import {
+    Button,
+    Col,
+    Input,
+    Form,
+    Label,
+    Nav,
+    NavItem,
     Navbar,
     NavbarBrand,
     NavbarText,
+    Row
 } from 'reactstrap';
 
 import SignIn from './SignIn';
@@ -17,6 +25,26 @@ export default function HeaderBar() {
     return (
         <Navbar color="dark" dark>
             <NavbarBrand href="/" color="dark">Movie Ratings</NavbarBrand>
+            <Nav className="me-auto" navbar>
+                <NavItem>
+
+                    <Form>
+                        <Row className="row-cols-lg-auto g-3 align-items-center">
+                            <Col>
+                                <Label className="visually-hidden" for="exampleEmail" >
+                                    Email
+                                </Label>
+                                <Input id="zipCode" name="zipCode" placeholder="Enter ZIP" type="email" />
+                            </Col>
+                            <Col>
+                                <Button>
+                                    Search
+                                </Button>
+                            </Col>
+                        </Row>
+                    </Form>
+                </NavItem>
+            </Nav>
             <NavbarText>{user ? <SignOut /> : <SignIn />}</NavbarText>
         </Navbar>
     );
