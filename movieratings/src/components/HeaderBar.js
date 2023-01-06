@@ -3,7 +3,6 @@ import {
     Col,
     Input,
     Form,
-    Label,
     Nav,
     NavItem,
     Navbar,
@@ -22,6 +21,7 @@ export default function HeaderBar() {
     const auth = firebase.auth();
     const [user] = useAuthState(auth);
 
+    // TODO: Add Google Maps integration to get end-user location
     return (
         <Navbar color="dark" className="navbar-rounded" dark>
             <NavbarBrand href="/" color="dark">Movie Ratings</NavbarBrand>

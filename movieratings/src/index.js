@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom/client';
 
 // Reactstrap imports
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+
 
 // App imports
 import MovieList from './components/MovieList';
 import HeaderBar from './components/HeaderBar';
+import './index.css';
 
 // Firebase imports
 import firebase from 'firebase/compat/app';
