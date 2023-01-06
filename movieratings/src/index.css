@@ -50,6 +50,11 @@ button {
   box-shadow: 5px 5px 10px gray;
 }
 
+/* 
+ * TODO: Fix inner table corners not rounding.
+ * Could be fixed by adding padding to the outer table, or
+ * change inner tables to ReactStrap Layout 
+ */
 .table-rounded {
   border-spacing: 0;
   border-collapse: separate;
@@ -63,6 +68,9 @@ button {
   color: #fff;
 }
 
+/*
+* TODO: Change button hovers
+*/
 .search-button,
 .sign-out-button,
 .sign-in-button {
