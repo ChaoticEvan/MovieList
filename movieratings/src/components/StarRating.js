@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 
+// TODO: Save/load rating from user settings
 const StarRating = () => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);

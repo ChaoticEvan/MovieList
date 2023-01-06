@@ -30,6 +30,7 @@ firebase.initializeApp({
 
 const auth = firebase.auth();
 
+//TODO: Add footer with contact info
 export default function Home() {
 
     return (

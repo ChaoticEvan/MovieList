@@ -21,6 +21,8 @@ function Movie(args) {
     )
 }
 
+// TODO: Integrate with wrapper API
+// TODO: Add reactstrap pagination
 export default function MovieList() {
     return (
         <div>
