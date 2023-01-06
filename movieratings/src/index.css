@@ -43,8 +43,9 @@ button {
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   background-color: var(--primary-background) !important;
+  box-shadow: 5px 5px 10px gray;
 }
 
 .table-rounded {
@@ -53,6 +54,7 @@ button {
   border-radius: 15px;
   border: 1px solid var(--primary-background);
   color: #fff !important;
+  box-shadow: 5px 5px 10px gray;
 }
 
 .white-text {
