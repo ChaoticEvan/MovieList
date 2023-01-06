@@ -26,16 +26,18 @@ button {
   --secondary-background: #62d2a2;
   --primary-highlight: #9df3c4;
   --secondary-highlight: #d7fbe8;
+  --star-on: #ffea73;
+  --star-off: #fff;
 }
 
 .background {
   background: var(--primary-background);
 }
 .on {
-  color: var(--primary-highlight);
+  color: var(--star-on);
 }
 .off {
-  color: var(--secondary-highlight);
+  color: var(--star-off);
 }
 
 .navbar-rounded {
