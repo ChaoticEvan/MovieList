@@ -51,7 +51,7 @@ button {
 }
 
 /* 
- * TODO: Fix inner table corners not rounding.
+ * // TODO: Fix inner table corners not rounding.
  * Could be fixed by adding padding to the outer table, or
  * change inner tables to ReactStrap Layout 
  */
@@ -69,7 +69,7 @@ button {
 }
 
 /*
-* TODO: Change button hovers
+* // TODO: Change button hovers
 */
 .search-button,
 .sign-out-button,
