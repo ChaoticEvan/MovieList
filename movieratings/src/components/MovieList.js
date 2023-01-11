@@ -4,7 +4,7 @@ import StarRating from './StarRating.js';
 function Movie(args) {
     return (
         <div>
-            <Table className="white-text">
+            <Table className="movie white-text">
                 <tbody>
                     <tr>
                         <td>{args.image}</td>

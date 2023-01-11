@@ -60,15 +60,23 @@ button {
   border-spacing: 0;
   border-collapse: separate;
   border-radius: 15px;
-  border: 1px solid var(--primary-background);
+  border-spacing: 5px;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 0.5px solid var(--primary-background);
   color: #fff !important;
   box-shadow: 5px 5px 10px gray;
+}
+
+.movie {
+  padding: 10%;
 }
 
 .white-text {
   color: #fff;
 }
 
+/* // TODO: Fix button text size too big */
 .search-button,
 .sign-out-button,
 .sign-in-button {
