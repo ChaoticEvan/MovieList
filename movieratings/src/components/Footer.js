@@ -6,9 +6,9 @@ export default function Footer() {
     return (
         <footer className="footer">
             <center>
-                <Button className="footer-button"><BsTwitter /></Button>
-                <Button className="footer-button"><BsGithub /></Button>
-                <Button className="footer-button"><MdEmail /></Button>
+                <Button href="https://twitter.com/EvanVoordeckers" className="footer-button"><BsTwitter /></Button>
+                <Button href="https://github.com/ChaoticEvan" className="footer-button"><BsGithub /></Button>
+                <Button href="mailto:evan.voordeckers@gmail.com" className="footer-button"><MdEmail /></Button>
             </center>
         </footer>
     );
