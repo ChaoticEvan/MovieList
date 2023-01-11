@@ -86,7 +86,6 @@ button {
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  /* border-top: var(--primary-background) 1px solid; */
   background-color: var(--primary-background);
   color: rgb(48, 48, 48);
   position: fixed;
@@ -96,7 +95,8 @@ button {
 }
 
 .footer-button {
-  margin: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
