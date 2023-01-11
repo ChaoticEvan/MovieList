@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // App imports
 import MovieList from './components/MovieList';
 import HeaderBar from './components/HeaderBar';
+import Footer from './components/Footer';
 import './index.css';
 
 // Firebase imports
@@ -30,13 +31,13 @@ firebase.initializeApp({
 
 const auth = firebase.auth();
 
-//TODO: Add footer with contact info
 export default function Home() {
 
     return (
         <div>
             <HeaderBar />
             <MovieList />
+            <Footer />
         </div>
     );
 }

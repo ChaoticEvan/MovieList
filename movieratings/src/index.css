@@ -26,6 +26,7 @@ button {
   --secondary-background: #62d2a2;
   --primary-highlight: #9df3c4;
   --secondary-highlight: #d7fbe8;
+  --button-hover: rgb(37, 80, 61);
   --star-on: #ffea73;
   --star-off: #fff;
 }
@@ -68,12 +69,43 @@ button {
   color: #fff;
 }
 
-/*
-* // TODO: Change button hovers
-*/
 .search-button,
 .sign-out-button,
 .sign-in-button {
   background-color: var(--secondary-background);
   border-color: var(--primary-background);
+}
+
+.search-button:hover,
+.sign-out-button:hover,
+.sign-in-button:hover {
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  /* border-top: var(--primary-background) 1px solid; */
+  background-color: var(--primary-background);
+  color: rgb(48, 48, 48);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-button {
+  margin: 1%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: var(--secondary-background);
+  border-color: var(--primary-background);
+}
+
+.footer-button:hover {
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
 }
