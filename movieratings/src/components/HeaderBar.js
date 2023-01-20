@@ -24,7 +24,7 @@ export default function HeaderBar() {
     // TODO: Add Google Maps integration to get end-user location
     return (
         <Navbar color="dark" className="navbar-rounded" dark>
-            <NavbarBrand href="/" className="header-brand" color="dark">Movie Ratings</NavbarBrand>
+            <NavbarBrand href="/" className="header-brand" color="dark">Movie List</NavbarBrand>
             <Nav className="me-auto" navbar>
                 <NavItem>
                     <Form>
