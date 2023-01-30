@@ -52,6 +52,7 @@ button {
 }
 
 .table-rounded {
+  font-size: 16px;
   border-spacing: 0;
   border-collapse: separate;
   border-radius: 15px;
@@ -72,12 +73,12 @@ button {
 }
 
 .header-brand {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .zip-input {
-  margin-top: 5%;
-  font-size: 10px;
+  margin-top: 2%;
+  font-size: 16px;
 }
 
 .search-button,
@@ -86,7 +87,7 @@ button {
   margin-top: 5%;
   background-color: var(--secondary-background);
   border-color: var(--primary-background);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .search-button:hover,
